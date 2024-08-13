@@ -11,7 +11,7 @@
     margin: 0;
   }
   body {
-    line-height: 1.5;
+    line-height: 1.2;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -31,6 +31,13 @@
   #root, #__next {
     isolation: isolate;
   }
+
+
+body{
+    margin: 0 10%;
+    background-color: black;
+}
+
 .container{
     display: flex;
     width: 100%;
@@ -38,7 +45,7 @@
 }
 
 .logo-container{
-    flex: 1;
+    flex: 1.4;
     width: 100%;
     height: 100vh;
     background-image: url(./resourses/aqua-image.jpg);
@@ -68,15 +75,110 @@ h1{
 }
 .footer{
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0;
+    color: #fff;
 }
 .footer a{
-    color: rgb(0,0,0);
+    color: #fff;
 }
 .footer a:hover{
-    color: #fff;
+    color: black;
 }
 
 .formulary-container{
     flex: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5%;    
+}
+
+.service p:first-child{
+    margin-bottom: 15px;
+}
+.service{
+    margin-top: 100px;
+    font-size:larger;
+    font-family: sans-serif;
+}
+fieldset{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+
+
+}
+.forms{
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    padding-bottom: 20px;
+}
+li{
+    list-style: none;
+}
+.register{
+    border-top: 1px solid lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register button{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: #0D5D56;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 60px;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+legend{
+    font-family: sans-serif;
+}
+
+.register button:hover{
+    border: 1px solid gray;
+    box-shadow: none;
+}
+
+input{
+    border-radius: 5px;
+}
+label{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: smaller;
+    color: rgba(0,0,50,1);
+    text-transform: uppercase;
+}
+
+input:invalid{
+    border: 1px solid;
+    border-color: red;    
+}
+input:valid{
+    border-color: aqua;
+}
+
+.register a{
+    color: #0D5D56;
+}
+span{
+    color: rgba(150,0,0,1);
+}
+.confirmation{
+    color: red;
 }

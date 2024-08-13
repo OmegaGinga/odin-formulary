@@ -17,10 +17,54 @@
                 <p>Photo by <a href="https://www.pexels.com/es-es/foto/toma-aerea-de-agua-azul-3894157/">b3gl</a> on <a href='pexels.com'>pexels</a></p>
             </div>
         </div>
-        <div class="formulary-container">
 
+        <div class="formulary-container">
+            <div class="service">
+                <p> <span>This is not a real service!</span> <strong>Nothing is better than feel the water on your skin, but make your dreams realized. Join now and you will feel not only the water but the satisfaction on your life!</strong></p>
+                <p><strong>This is your signal, approach it now!</strong></p>
+            </div>
+            <div class="formulary">
+                <fieldset>
+                    <legend><strong>Let's do this!</strong></legend>
+                    <form action="_blank" method="get">
+                        <div class="forms">
+                            <ul>
+                                <li><label for="name">Name</label></li>
+                                <li><input type="text" name="name" id="name" pattern="[A-Za-z]{1-25}" minlength="1" maxlength="25" placeholder="ej: Robert" required></li>
+                            </ul>
+                            <ul>
+                                <li><label for="last">Last Name</label></li>
+                                <li><input type="text" name="last" id="last" pattern="[A-Za-z]{1-25}" minlength="1" maxlength="25" placeholder="ej: Johnson" required></li>
+                            </ul>
+                            <ul>
+                                <li><label for="email">Email</label></li>
+                                <li><input type="email" name="email" id="email" maxlength="100" placeholder="ej: robert@robert.com" required></li>
+                            </ul>
+                            <ul>
+                                <li><label for="phone">Phone Number</label></li>
+                                <li><input type="tel" name="phone" id="phone" minlength="10" maxlength="10" placeholder=" ej: 2771231212" required ></li>
+                            </ul>
+                            <ul>
+                                <li><label for="password">Password</label></li>
+                                <li><input type="password" name="password" id="password" minlength="8" maxlength="30" placeholder="Up to 30 characters" required></li>
+                                <p class="confirmation"></p>
+                            </ul>
+                            <ul>
+                                <li><label for="confirm">Confirm Password</label></li>
+                                <li><input type="password" name="confirm" id="confirm" required></li>
+                            </ul>
+                        </div>
+
+                        <div class="register">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <a href="">Log in</a></p>
+                        </div>
+                    </form>
+                </fieldset>                
+            </div>
         </div>
 
     </div>    
+    <script src="./script.js"></script>
 </body>
 </html>
