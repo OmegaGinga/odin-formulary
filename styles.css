@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'PatrickHand';
+    src: url(./resourses/PatrickHandSC-Regular.woff) format('woff');
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+ 
+  input, button, textarea, select {
+    font: inherit;
+  }
+ 
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+ 
+  #root, #__next {
+    isolation: isolate;
+  }
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container{
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./resourses/aqua-image.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    height: 20%;
+    max-width: 100%;
+    max-height: 30%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 80%;
+    max-height: 80%;
+}
+h1{
+    font-size: 48px;
+    color: #fff;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+.footer a{
+    color: rgb(0,0,0);
+}
+.footer a:hover{
+    color: #fff;
+}
+
+.formulary-container{
+    flex: 2;
+}
